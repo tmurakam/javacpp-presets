@@ -32,6 +32,7 @@ import org.bytedeco.javacpp.tools.InfoMapper;
  *
  * @author Samuel Audet
  */
+/*
 @Properties(
     inherit = avutil.class,
     target = "org.bytedeco.ffmpeg.postproc",
@@ -41,9 +42,12 @@ import org.bytedeco.javacpp.tools.InfoMapper;
         @Platform(value = "windows", preload = "postproc-55")
     }
 )
+*/
 public class postproc implements InfoMapper {
     public void map(InfoMap infoMap) {
+        /*
         infoMap.put(new Info("QP_STORE_T").cppTypes().valueTypes("byte").pointerTypes("BytePointer"))
                .put(new Info("LIBPOSTPROC_VERSION_INT < (52<<16)").define(false));
+         */
     }
 }
